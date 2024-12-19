@@ -7,11 +7,11 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		tags= "@remplissage_information_page_signup,@Commander_et_acheter_des_produits",
+		tags= "@remplissage_information_page_signup , @Commander_et_acheter_des_produits",
 		
 		features="src/test/feature",
 		glue={"hooks","stepDefinition"},
-		publish = true,
+		//publish = true,
 		plugin= {"pretty"
 				,"html:target/cucumber-reports.html"
 				,"json:target/cucumber-reports",
